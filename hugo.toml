@@ -1,29 +1,32 @@
 baseurl = "http://www.example.com"
-title = "isaelhuard"
+title = "isael huard"
 theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
 
 paginate = 20
 
-disqusShortname = "ih"
+# disqusShortname = "ih"
 
 [markup.highlight]
 style = "github-dark"
 
 [params]
   author = "Isael Huard"
-  info = "Full Stack DevOps and Magician"
-  description = "John Doe's personal website"
-  keywords = "blog,developer,web,audio"
-  avatarurl = "images/avatar.jpg"
-  #gravatar = "john.doe@example.com"
+  info = "Full Stack Web Developer"
+  description = "Isael Huard's developer portfolio and blog"
+  keywords = "developer,sound,design,blog,web"
+  avatarurl = "images/isael.jpg"
+  # gravatar = "isaelhuard@gmail.com"
+  dateFormat = "January 2, 2006"
+  # commit = "https://github.com/luizdepra/hugo-coder/tree/"
+  rtl = false
 
   faviconSVG = "/img/favicon.svg"
   favicon_32 = "/img/favicon-32x32.png"
   favicon_16 = "/img/favicon-16x16.png"
 
-  since = 2019
+  #since = 2019
 
   enableTwemoji = true
 
@@ -33,6 +36,10 @@ style = "github-dark"
   # customCSS = ["css/custom.css"]
   # customSCSS = ["scss/custom.scss"]
   # customJS = ["js/custom.js"]
+
+  # If you want to use Google Tag Manager(https://analytics.google.com/) for analytics, add this section
+  # [params.googleTagManager]
+  # id = "gid"
 
 [taxonomies]
   category = "categories"
@@ -45,24 +52,49 @@ style = "github-dark"
   name = "Github"
   icon = "fa fa-github fa-2x"
   weight = 1
-  url = "https://github.com/johndoe/"
+  url = "https://github.com/isahua16/"
 [[params.social]]
-  name = "Gitlab"
-  icon = "fa fa-gitlab fa-2x"
+  name = "Linkedin"
+  icon = "fa fa-linkedin fa-2x"
   weight = 2
-  url = "https://gitlab.com/johndoe/"
-[[params.social]]
-  name = "Twitter"
-  icon = "fa fa-twitter fa-2x"
-  weight = 3
-  url = "https://twitter.com/johndoe/"
+  url = "https://www.linkedin.com/in/isaelhuard/"
+
+[languages.en]
+languageName = "en"
 
 # Menu links
-[[menu.main]]
-  name = "Blog"
-  weight = 1
-  url  = "posts/"
-[[menu.main]]
-  name = "About"
-  weight = 2
-  url = "about/"
+[[languages.en.menu.main]]
+name = "Projects"
+weight = 1
+url  = "projects/"
+[[languages.en.menu.main]]
+name = "About"
+weight = 2
+url  = "about/"
+[[languages.en.menu.main]]
+name = "Blog"
+weight = 3
+url  = "posts/"
+
+[languages.fr]
+languageName = "fr"
+title = "Isael Huard"
+
+[languages.fr.params]
+author = "Isael Huard"
+info = "Developpeur Web Full-Stack"
+description = ""
+keywords = "blogue,developpeur,web,"
+
+[[languages.fr.menu.main]]
+name = "Projets"
+weight = 1
+url  = "projects/"
+[[languages.fr.menu.main]]
+name = "À propos"
+weight = 2
+url  = "about/"
+[[languages.fr.menu.main]]
+name = "Blogue"
+weight = 3
+url  = "posts/"
