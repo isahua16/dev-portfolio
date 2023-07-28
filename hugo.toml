@@ -1,5 +1,5 @@
 baseurl = "http://www.example.com"
-title = "isael huard"
+title = "Isael Huard"
 theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
@@ -22,9 +22,9 @@ style = "github-dark"
   # commit = "https://github.com/luizdepra/hugo-coder/tree/"
   rtl = false
 
-  faviconSVG = "/img/favicon.svg"
-  favicon_32 = "/img/favicon-32x32.png"
-  favicon_16 = "/img/favicon-16x16.png"
+  # faviconSVG = ""
+  favicon_32 = "/favicon/favicon-32x32.png"
+  favicon_16 = "/favion/favicon-16x16.png"
 
   #since = 2019
 
